@@ -1,0 +1,25 @@
+# Build & packaging output
+obj/
+*.apk
+*.aab
+*.idsig
+*.keystore
+*.jks
+*.mapping
+mapping.txt
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.iml
+.gradle/
+build/
+local.properties
+
+# Patches rejected/backup
+*.orig
+*.rej
