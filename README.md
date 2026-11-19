@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/viroaryan/nirvanabrowser/releases"><img src="https://img.shields.io/badge/version-1.0.7-blue.svg?style=flat-square" alt="Version 1.0.7"></a>
+  <a href="https://github.com/viroaryan/nirvanabrowser/releases"><img src="https://img.shields.io/badge/version-1.0.8-blue.svg?style=flat-square" alt="Version 1.0.8"></a>
   <a href="https://www.mozilla.org/en-US/firefox/android/"><img src="https://img.shields.io/badge/engine-GeckoView%20160.0.0-orange.svg?style=flat-square" alt="Engine 160.0.0"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MPL%202.0-green.svg?style=flat-square" alt="License MPL 2.0"></a>
   <img src="https://img.shields.io/badge/privacy-liberated%20%7C%20zero%20telemetry-brightgreen.svg?style=flat-square" alt="Privacy First">
@@ -50,12 +50,13 @@ Developers and users can take the official upstream Mozilla Firefox Android sour
 |  - 01-nirvana-core-and-liberate.patch          |
 |  - 02-nirvana-branding.patch                   |
 |  - 03-nirvana-locales.patch                    |
+|  - 04-nirvana-1.0.8-hardened-and-team.patch    |
 |  - Bundled Extensions & Visual Assets          |
 +------------------------------------------------+
                        │
                        ▼
 +------------------------------------------------+
-|  Nirvana Browser 1.0.7 (APK & AAB)             |
+|  Nirvana Browser 1.0.8 (APK & AAB)             |
 +------------------------------------------------+
 ```
 
@@ -140,17 +141,29 @@ nirvanabrowser/
 │   ├── extensions/           # Pre-packaged uBlock Origin extension (.xpi)
 │   └── res/                  # Nirvana adaptive icons, splash screens, and mipmaps
 ├── patches/
-│   ├── 01-nirvana-core-and-liberate.patch  # Telemetry stripping & microG integration
-│   ├── 02-nirvana-branding.patch           # Nirvana App ID, names, and themes
-│   ├── 03-nirvana-locales.patch            # All 100+ language string translations
-│   └── nirvana-160.0.0-unified.patch       # All-in-one binary patch
+│   ├── 01-nirvana-core-and-liberate.patch        # Telemetry stripping & microG integration
+│   ├── 02-nirvana-branding.patch                 # Nirvana App ID, names, and themes
+│   ├── 03-nirvana-locales.patch                  # All 100+ language string translations
+│   ├── 04-nirvana-1.0.8-hardened-and-team.patch  # Video fixes, anti-fingerprinting & team credits
+│   └── nirvana-160.0.0-unified.patch             # All-in-one binary patch
 ├── scripts/
-│   ├── apply_patches.sh / .ps1             # Automated patch & asset applicator
-│   └── build_nirvana.sh / .ps1             # Build orchestration helper
+│   ├── apply_patches.sh / .ps1                   # Automated patch & asset applicator
+│   └── build_nirvana.sh / .ps1                   # Build orchestration helper
 ├── .gitignore
-├── LICENSE                   # Mozilla Public License 2.0
+├── LICENSE                         # Mozilla Public License 2.0
 └── README.md
 ```
+
+---
+
+## 👥 Nirvana Core Team
+
+| Name | Role |
+| :--- | :--- |
+| **Abhiraj Aryan** | **Founder & Creator** |
+| **Rahul Kumar Pal** | **Co-Founder** |
+| **Priyanshu Singh** | **Designing & UI/UX** |
+| **Shivam Giri** | **Advertisement & Growth** |
 
 ---
 

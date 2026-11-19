@@ -33,6 +33,15 @@ try {
         throw "git apply failed with exit code $LASTEXITCODE"
     }
 
+    $patch04 = Join-Path $RepoRoot 'patches\04-nirvana-1.0.8-hardened-and-team.patch'
+    if (Test-Path $patch04) {
+        Write-Host "==> Applying Nirvana 1.0.8 hardening and team patch..."
+        & git apply --verbose --ignore-whitespace $patch04
+        if ($LASTEXITCODE -ne 0) {
+            throw "git apply 04 patch failed with exit code $LASTEXITCODE"
+        }
+    }
+
     Write-Host "==> Synchronizing Nirvana assets..."
     $extDir = Join-Path $TargetDir 'mobile\android\fenix\app\src\main\assets\extensions'
     if (-not (Test-Path $extDir)) { New-Item -ItemType Directory -Path $extDir -Force | Out-Null }

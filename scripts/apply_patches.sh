@@ -39,6 +39,12 @@ fi
 echo "==> Applying Nirvana 160.0.0 unified patch..."
 git apply --verbose --ignore-whitespace "${PATCH_FILE}"
 
+PATCH_04="${REPO_ROOT}/patches/04-nirvana-1.0.8-hardened-and-team.patch"
+if [ -f "${PATCH_04}" ]; then
+    echo "==> Applying Nirvana 1.0.8 hardening and team patch..."
+    git apply --verbose --ignore-whitespace "${PATCH_04}"
+fi
+
 # 3. Synchronize assets (Extensions and Icons)
 echo "==> Synchronizing Nirvana assets..."
 
